@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%; /* columnas verticales*/
+            column-gap: 1em; /* espacio entre columnas */
+             row-gap: 1em; /*espacio entre celdas espacio horizontal */
+             /*gap:1em;*/ /* Espacio horizontal y vertial combinacion de row-gap y column gap*/
+
+        }
+        .wrapper > div{
+            background-color: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, hic
+        quidem ex doloremque harum atque velit. Odit molestiae nulla nostrum ab
+        numquam repellendus, dolorem voluptas libero quaerat totam iure ipsa
+        maiores explicabo, odio laudantium accusantium repudiandae asperiores
+        recusandae! Possimus, libero debitis distinctio maxime delectus ipsa
+        reprehenderit consectetur neque et repudiandae tenetur modi, ex
+        molestias officiis dolorum eligendi, est non illum. Quae tempora
+        voluptas adipisci nemo obcaecati dolorum earum repudiandae beatae ipsam
+        recusandae quis rerum quia officia ducimus, est delectus. Deserunt.
+      </div>
+      <div class="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur
+        repellendus dolorum reprehenderit saepe expedita necessitatibus
+        accusantium, exercitationem libero quidem aliquam velit quam officiis
+        hic incidunt, laborum magnam eius quas!
+      </div>
+      <div class="">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, hic
+        quidem ex doloremque harum atque velit. Odit molestiae nulla nostrum ab
+        numquam repellendus, dolorem voluptas libero quaerat totam iure ipsa
+        maiores explicabo, odio laudantium accusantium repudiandae asperiores
+        recusandae! Possimus, libero debitis distinctio maxime delectus ipsa
+        reprehenderit consectetur neque et repudiandae tenetur modi, ex
+        molestias officiis dolorum eligendi, est non illum. Quae tempora
+        voluptas adipisci nemo obcaecati dolorum earum repudiandae beatae ipsam
+        recusandae quis rerum quia officia ducimus, est delectus. Deserunt.
+      </div>
+      <div class="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur
+        repellendus dolorum reprehenderit saepe expedita necessitatibus
+        accusantium, exercitationem libero quidem aliquam velit quam officiis
+        hic incidunt, laborum magnam eius quas!
+      </div>
+    </div>
+  </body>
+</html>
